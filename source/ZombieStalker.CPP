@@ -1282,7 +1282,7 @@ void erase_snow()
 	int index;
 	if(world[screen_y][screen_x].snowing)
 	{
-		for(index=0;index<60;index++)
+		for(index=0;index<MAX_SNOW;index++)
 				Write_Pixel_DB(snow[index].x,snow[index].y,snow[index].back);
 	}
 }
@@ -1293,7 +1293,7 @@ void under_snow()
 	int index;
 	if(world[screen_y][screen_x].snowing)
 	{
-		for(index=0;index<60;index++)
+		for(index=0;index<MAX_SNOW;index++)
 				snow[index].back=Read_Pixel_DB(snow[index].x,snow[index].y);
 	}
 }
@@ -1304,7 +1304,7 @@ void draw_snow()
 	int index;
 	if(world[screen_y][screen_x].snowing)
 	{
-		for(index=0;index<60;index++)
+		for(index=0;index<MAX_SNOW;index++)
 				Write_Pixel_DB(snow[index].x,snow[index].y,snow[index].color);
 	}
 }
@@ -1315,7 +1315,7 @@ void move_snow()
 	int index;
 	if(world[screen_y][screen_x].snowing)
 	{
-		for(index=0;index<60;index++)
+		for(index=0;index<MAX_SNOW;index++)
 		{
 			if(snow[index].state)
 			{
