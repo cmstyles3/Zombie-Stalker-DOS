@@ -254,7 +254,7 @@ void main()
 	{
 		system(searchpath("loadhigh midpak.com"));
 		system("loadhigh midpak.com");
-	} */
+	}*/
 	randomize();
 	int playstate;
 	difficulty=1;
@@ -268,12 +268,12 @@ void main()
 	Time_Delay(30);
 	PCX_Load("INTRO.pcx",(pcx_picture_ptr)&intro,1); //Load the picture
 	PCX_Show_Buffer((pcx_picture_ptr)&intro); //show the picture
-	Time_Delay(100);
+	Time_Delay(25);
 	Screen_Transition(SCREEN_DISOLVE); //dissolve screen
 	Fill_Screen(0);
 	PCX_Load("title.pcx",(pcx_picture_ptr)&intro,1);
 	PCX_Show_Buffer((pcx_picture_ptr)&intro);
-	Time_Delay(105);
+	Time_Delay(25);
 	Screen_Transition(SCREEN_DARKNESS); //fade to dark
 	PCX_Delete((pcx_picture_ptr)&intro); //DEALLOCATE MEMORY FOR PICTURE
 	Fill_Screen(0); //clear screen with black
