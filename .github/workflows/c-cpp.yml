@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: dos
+    runs-on: dos-latest
 
     steps:
     - uses: actions/checkout@v2
